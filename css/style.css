@@ -1,0 +1,2150 @@
+
+/* =====================================================
+   AMÉLIA RESTAURANTE
+   MAIN STYLESHEET
+===================================================== */
+
+
+/* =====================================================
+   ROOT VARIABLES
+===================================================== */
+
+
+:root{
+
+    --gold:#c8a45d;
+
+    --gold-light:#e2c47c;
+
+    --dark:#111;
+
+    --dark-soft:#1b1b1b;
+
+    --white:#ffffff;
+
+    --gray:#777;
+
+    --light:#f8f7f4;
+
+
+    --font-title:
+    "Cormorant Garamond",
+    serif;
+
+
+    --font-body:
+    "Inter",
+    sans-serif;
+
+
+    --transition:.3s ease;
+
+
+}
+
+
+
+
+
+/* =====================================================
+   RESET
+===================================================== */
+
+
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+
+
+body{
+
+    font-family:var(--font-body);
+
+    color:#222;
+
+    background:white;
+
+    overflow-x:hidden;
+
+}
+
+
+
+img{
+
+    max-width:100%;
+
+    display:block;
+
+}
+
+
+
+a{
+
+    text-decoration:none;
+
+    color:inherit;
+
+}
+
+
+
+ul{
+
+    list-style:none;
+
+}
+
+
+
+button{
+
+    border:none;
+
+    background:none;
+
+    cursor:pointer;
+
+}
+
+
+
+
+
+
+/* =====================================================
+   GLOBAL
+===================================================== */
+
+
+.container{
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:auto;
+
+}
+
+
+
+section{
+
+    padding:100px 0;
+
+}
+
+
+
+
+
+.section-title{
+
+    text-align:center;
+
+    margin-bottom:60px;
+
+}
+
+
+
+.section-title span,
+
+.section-subtitle{
+
+    display:block;
+
+    color:var(--gold);
+
+    text-transform:uppercase;
+
+    letter-spacing:4px;
+
+    font-size:.8rem;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.section-title h2{
+
+    font-family:var(--font-title);
+
+    font-size:3.5rem;
+
+    font-weight:600;
+
+}
+
+
+
+.section-title p{
+
+    max-width:650px;
+
+    margin:20px auto 0;
+
+    color:#666;
+
+    line-height:1.8;
+
+}
+
+
+
+
+
+
+
+/* =====================================================
+   BUTTONS
+===================================================== */
+
+
+.btn-primary{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+
+    background:var(--gold);
+
+    color:white;
+
+
+    padding:16px 38px;
+
+
+    border-radius:2px;
+
+
+    font-size:.9rem;
+
+    letter-spacing:1px;
+
+
+    transition:var(--transition);
+
+
+}
+
+
+
+.btn-primary:hover{
+
+    background:#ad8744;
+
+    transform:translateY(-3px);
+
+}
+
+
+
+
+
+
+
+
+/* =====================================================
+   LOADER
+===================================================== */
+
+
+.loader{
+
+    position:fixed;
+
+    inset:0;
+
+    background:white;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    z-index:9999;
+
+
+}
+
+
+
+.loader-circle{
+
+    width:45px;
+
+    height:45px;
+
+    border:4px solid #ddd;
+
+    border-top-color:var(--gold);
+
+    border-radius:50%;
+
+    animation:spin 1s linear infinite;
+
+
+}
+
+
+
+.loader.hide{
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:.5s;
+
+}
+
+
+
+
+@keyframes spin{
+
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+
+}
+
+
+
+
+
+
+/* =====================================================
+   SCROLL PROGRESS
+===================================================== */
+
+
+.scroll-progress{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+
+    width:0;
+
+    height:3px;
+
+
+    background:var(--gold);
+
+    z-index:9999;
+
+
+}
+
+
+
+
+
+
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+
+#header{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+
+    z-index:1000;
+
+
+    transition:var(--transition);
+
+
+}
+
+
+
+#header .container{
+
+    height:90px;
+
+
+    display:flex;
+
+
+    align-items:center;
+
+
+    justify-content:space-between;
+
+
+}
+
+
+
+
+
+
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+
+}
+
+
+
+.logo img{
+
+
+    max-height:55px;
+
+    max-width:170px;
+
+
+    width:auto;
+
+
+    object-fit:contain;
+
+
+}
+
+
+
+
+
+
+
+#menu-mobile{
+
+    display:none;
+
+
+    color:white;
+
+    font-size:2rem;
+
+}
+
+
+
+
+
+nav ul{
+
+
+    display:flex;
+
+
+    gap:35px;
+
+
+}
+
+
+
+nav a{
+
+
+    color:white;
+
+    font-size:.95rem;
+
+    transition:var(--transition);
+
+
+}
+
+
+
+
+nav a:hover{
+
+
+    color:var(--gold);
+
+
+}
+
+
+
+
+
+
+
+/* HEADER AFTER SCROLL */
+
+
+#header.scrolled{
+
+
+    background:white;
+
+
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+
+}
+
+
+
+
+#header.scrolled nav a{
+
+
+    color:#222;
+
+
+}
+
+
+
+
+
+#header.scrolled #menu-mobile{
+
+
+    color:#222;
+
+
+}
+
+
+
+
+
+
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+
+.hero{
+
+    height:100vh;
+
+    min-height:700px;
+
+
+    position:relative;
+
+
+    overflow:hidden;
+
+
+}
+
+
+
+
+
+
+.slider,
+
+.slide{
+
+
+    position:absolute;
+
+    inset:0;
+
+
+}
+
+
+
+
+
+
+.slide{
+
+
+    opacity:0;
+
+    transition:1.5s;
+
+
+}
+
+
+
+
+.slide.active{
+
+
+    opacity:1;
+
+
+}
+
+
+
+
+
+
+.slide img{
+
+
+    width:100%;
+
+    height:100%;
+
+
+    object-fit:cover;
+
+
+}
+
+
+
+
+
+
+
+.overlay{
+
+
+    position:absolute;
+
+    inset:0;
+
+
+    background:
+
+    linear-gradient(
+
+    rgba(0,0,0,.55),
+
+    rgba(0,0,0,.45)
+
+    );
+
+
+}
+
+
+
+
+
+
+.hero-content{
+
+
+    position:relative;
+
+    z-index:2;
+
+
+    height:100%;
+
+
+    display:flex;
+
+
+    flex-direction:column;
+
+
+    justify-content:center;
+
+
+    align-items:center;
+
+
+    text-align:center;
+
+
+    color:white;
+
+
+    padding:20px;
+
+
+}
+
+
+
+
+.hero-content .subtitle{
+
+
+    color:var(--gold-light);
+
+    text-transform:uppercase;
+
+    letter-spacing:5px;
+
+    font-size:.85rem;
+
+
+}
+
+
+
+
+.hero-content h1{
+
+
+    font-family:var(--font-title);
+
+
+    font-size:6rem;
+
+
+    font-weight:600;
+
+
+    margin:20px 0;
+
+
+}
+
+
+
+.hero-content p{
+
+
+    max-width:650px;
+
+
+    font-size:1.15rem;
+
+
+    line-height:1.8;
+
+
+}
+
+
+
+.hero-buttons{
+
+
+    margin-top:35px;
+
+}
+
+
+/* =====================================================
+   SOBRE
+===================================================== */
+
+
+#sobre{
+
+    background:white;
+
+}
+
+
+
+.grid-2{
+
+
+    display:grid;
+
+
+    grid-template-columns:
+
+    repeat(2,1fr);
+
+
+    align-items:center;
+
+
+    gap:80px;
+
+
+}
+
+
+
+
+
+#sobre img{
+
+
+    width:100%;
+
+
+    height:600px;
+
+
+    object-fit:cover;
+
+
+}
+
+
+
+
+
+#sobre h2{
+
+
+    font-family:var(--font-title);
+
+
+    font-size:4rem;
+
+
+    font-weight:600;
+
+
+    line-height:1.1;
+
+
+    margin-bottom:30px;
+
+
+}
+
+
+
+
+
+#sobre p{
+
+
+    color:#666;
+
+
+    line-height:1.9;
+
+
+    margin-bottom:20px;
+
+
+    font-size:1.05rem;
+
+
+}
+
+
+
+
+
+
+
+
+/* =====================================================
+   HISTÓRIA / MISSÃO VISÃO VALORES
+===================================================== */
+
+
+#historia{
+
+
+    background:var(--light);
+
+
+}
+
+
+
+
+
+
+
+#historia .cards{
+
+
+    display:grid;
+
+
+    grid-template-columns:
+
+    repeat(3,1fr);
+
+
+    gap:35px;
+
+
+}
+
+
+
+
+
+
+/* CARD INSTITUCIONAL */
+
+
+#historia .food-card{
+
+
+    background:white;
+
+
+    padding:45px 35px;
+
+
+    border-radius:5px;
+
+
+    text-align:center;
+
+
+    transition:var(--transition);
+
+
+    border-bottom:3px solid transparent;
+
+
+}
+
+
+
+
+
+
+#historia .food-card:hover{
+
+
+    transform:translateY(-10px);
+
+
+    border-color:var(--gold);
+
+
+    box-shadow:
+
+    0 20px 40px rgba(0,0,0,.08);
+
+
+}
+
+
+
+
+
+
+#historia h3{
+
+
+    font-family:var(--font-title);
+
+
+    font-size:2.5rem;
+
+
+    margin-bottom:20px;
+
+
+    color:#222;
+
+
+}
+
+
+
+
+
+
+#historia p{
+
+
+    color:#666;
+
+
+    line-height:1.8;
+
+
+}
+
+
+
+
+
+
+
+
+/* =====================================================
+   REVEAL ANIMATION
+===================================================== */
+
+
+.reveal,
+
+
+.reveal-left,
+
+
+.reveal-right{
+
+
+    opacity:0;
+
+
+    transition:
+
+    opacity .8s ease,
+
+    transform .8s ease;
+
+
+}
+
+
+
+
+
+
+.reveal{
+
+
+    transform:translateY(40px);
+
+
+}
+
+
+
+
+
+
+.reveal-left{
+
+
+    transform:translateX(-50px);
+
+
+}
+
+
+
+
+
+
+.reveal-right{
+
+
+    transform:translateX(50px);
+
+
+}
+
+
+
+
+
+
+.reveal.active,
+
+
+.reveal-left.active,
+
+
+.reveal-right.active{
+
+
+    opacity:1;
+
+
+    transform:translate(0);
+
+
+}
+
+
+
+
+
+
+/* =====================================================
+   DECORATIVE ELEMENTS
+===================================================== */
+
+
+#historia .food-card::before{
+
+
+    content:"";
+
+
+    display:block;
+
+
+    width:50px;
+
+
+    height:2px;
+
+
+    background:var(--gold);
+
+
+    margin:0 auto 25px;
+
+
+}
+
+
+
+
+
+
+
+/* =====================================================
+   RESPONSIVE PREPARATION
+===================================================== */
+
+
+@media(max-width:1024px){
+
+
+    .grid-2{
+
+
+        gap:40px;
+
+
+    }
+
+
+
+    #sobre h2{
+
+
+        font-size:3rem;
+
+
+    }
+
+
+}
+
+
+
+/* =====================================================
+   GALERIA
+===================================================== */
+
+
+#galeria{
+
+
+    background:white;
+
+
+}
+
+
+
+
+
+
+.gallery{
+
+
+    display:grid;
+
+
+    grid-template-columns:
+
+    repeat(3,1fr);
+
+
+    gap:25px;
+
+
+}
+
+
+
+
+
+
+.gallery figure{
+
+
+    position:relative;
+
+
+    overflow:hidden;
+
+
+    height:350px;
+
+
+    border-radius:4px;
+
+
+}
+
+
+
+
+
+
+.gallery img{
+
+
+    width:100%;
+
+
+    height:100%;
+
+
+    object-fit:cover;
+
+
+    transition:
+
+    transform .6s ease;
+
+
+}
+
+
+
+
+
+
+
+.gallery figure::after{
+
+
+    content:"";
+
+
+    position:absolute;
+
+
+    inset:0;
+
+
+    background:
+
+    linear-gradient(
+
+    transparent,
+
+    rgba(0,0,0,.45)
+
+    );
+
+
+    opacity:0;
+
+
+    transition:var(--transition);
+
+
+}
+
+
+
+
+
+
+.gallery figure:hover img{
+
+
+    transform:scale(1.08);
+
+
+}
+
+
+
+
+
+
+.gallery figure:hover::after{
+
+
+    opacity:1;
+
+
+}
+
+
+
+
+
+
+
+/* =====================================================
+   DEPOIMENTOS
+===================================================== */
+
+
+#depoimentos{
+
+
+    background:var(--light);
+
+
+}
+
+
+
+
+
+
+
+.testimonials{
+
+
+    display:grid;
+
+
+    grid-template-columns:
+
+    repeat(3,1fr);
+
+
+    gap:35px;
+
+
+}
+
+
+
+
+
+
+
+
+.testimonial{
+
+
+    background:white;
+
+
+    padding:45px 35px;
+
+
+    position:relative;
+
+
+    border-radius:5px;
+
+
+    box-shadow:
+
+    0 15px 35px rgba(0,0,0,.05);
+
+
+    transition:var(--transition);
+
+
+}
+
+
+
+
+
+
+.testimonial:hover{
+
+
+    transform:translateY(-8px);
+
+
+}
+
+
+
+
+
+
+.testimonial::before{
+
+
+    content:"“";
+
+
+    position:absolute;
+
+
+    top:15px;
+
+
+    left:25px;
+
+
+    font-family:var(--font-title);
+
+
+    font-size:5rem;
+
+
+    color:var(--gold);
+
+
+    line-height:1;
+
+
+}
+
+
+
+
+
+
+.testimonial p{
+
+
+    margin-top:35px;
+
+
+    color:#666;
+
+
+    font-size:1rem;
+
+
+    line-height:1.8;
+
+
+    font-style:italic;
+
+
+}
+
+
+
+
+
+.testimonial strong{
+
+
+    display:block;
+
+
+    margin-top:25px;
+
+
+    color:#222;
+
+
+    font-weight:600;
+
+
+}
+
+
+
+
+
+
+
+/* =====================================================
+   CTA FINAL
+===================================================== */
+
+
+.cta{
+
+
+    position:relative;
+
+
+    text-align:center;
+
+
+    color:white;
+
+
+    background:
+
+
+    linear-gradient(
+
+    rgba(0,0,0,.65),
+
+    rgba(0,0,0,.65)
+
+    ),
+
+    url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1800&q=80")
+
+    center/cover no-repeat;
+
+
+}
+
+
+
+
+
+
+.cta .container{
+
+
+    position:relative;
+
+
+    z-index:2;
+
+
+}
+
+
+
+
+
+
+.cta h2{
+
+
+    font-family:var(--font-title);
+
+
+    font-size:4rem;
+
+
+    font-weight:600;
+
+
+    margin:20px auto;
+
+
+    max-width:850px;
+
+
+    line-height:1.2;
+
+
+}
+
+
+
+
+
+
+.cta p{
+
+
+    max-width:650px;
+
+
+    margin:0 auto 35px;
+
+
+    font-size:1.1rem;
+
+
+    line-height:1.8;
+
+
+    color:#eee;
+
+
+}
+
+
+
+
+
+
+
+.cta .section-subtitle{
+
+
+    color:var(--gold-light);
+
+
+}
+
+
+
+
+
+
+
+
+/* =====================================================
+   FOOTER PREPARATION
+===================================================== */
+
+
+footer{
+
+
+    background:#111;
+
+
+    color:white;
+
+
+    padding:80px 0 30px;
+
+
+}
+
+
+
+footer .container{
+
+
+    display:grid;
+
+
+    grid-template-columns:
+
+    repeat(3,1fr);
+
+
+    gap:50px;
+
+
+}
+
+
+
+
+
+
+
+
+.footer-brand p{
+
+
+    color:#aaa;
+
+
+    margin-top:20px;
+
+
+    line-height:1.7;
+
+
+}
+
+
+
+
+
+
+
+.footer-links,
+
+
+.social-links{
+
+
+    display:flex;
+
+
+    flex-direction:column;
+
+
+    gap:15px;
+
+
+}
+
+
+
+
+
+
+
+footer h4{
+
+
+    font-size:1.1rem;
+
+
+    margin-bottom:15px;
+
+
+    color:var(--gold);
+
+
+}
+
+
+
+
+
+
+.footer-links a,
+
+
+.social-links a{
+
+
+    color:#ccc;
+
+
+    transition:var(--transition);
+
+
+}
+
+
+
+
+
+
+.footer-links a:hover,
+
+
+.social-links a:hover{
+
+
+    color:white;
+
+
+    transform:translateX(5px);
+
+
+}
+
+
+
+
+
+
+.footer-bottom{
+
+
+    text-align:center;
+
+
+    border-top:1px solid rgba(255,255,255,.1);
+
+
+    margin-top:50px;
+
+
+    padding-top:25px;
+
+
+    color:#888;
+
+
+    font-size:.9rem;
+
+
+}
+
+
+/* =====================================================
+   FOOTER LOGO
+===================================================== */
+
+
+.logo-footer img{
+
+
+    max-height:70px;
+
+
+    width:auto;
+
+
+    object-fit:contain;
+
+
+}
+
+
+
+
+
+
+/* =====================================================
+   WHATSAPP FLOAT BUTTON
+===================================================== */
+
+
+.whatsapp{
+
+
+    position:fixed;
+
+
+    right:30px;
+
+
+    bottom:30px;
+
+
+    width:60px;
+
+
+    height:60px;
+
+
+    border-radius:50%;
+
+
+    background:#25D366;
+
+
+    color:white;
+
+
+    display:flex;
+
+
+    align-items:center;
+
+
+    justify-content:center;
+
+
+    z-index:900;
+
+
+    box-shadow:
+
+    0 10px 30px rgba(0,0,0,.25);
+
+
+    transition:var(--transition);
+
+
+}
+
+
+
+
+
+
+.whatsapp:hover{
+
+
+    transform:translateY(-5px) scale(1.05);
+
+
+}
+
+
+
+
+
+
+.whatsapp svg{
+
+
+    width:28px;
+
+
+    height:28px;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================================
+   BACK TO TOP
+===================================================== */
+
+
+#backTop{
+
+
+    position:fixed;
+
+
+    right:35px;
+
+
+    bottom:105px;
+
+
+    width:45px;
+
+
+    height:45px;
+
+
+    border-radius:50%;
+
+
+    background:var(--gold);
+
+
+    color:white;
+
+
+    font-size:1.3rem;
+
+
+    display:flex;
+
+
+    align-items:center;
+
+
+    justify-content:center;
+
+
+    opacity:0;
+
+
+    visibility:hidden;
+
+
+    transform:translateY(20px);
+
+
+    transition:var(--transition);
+
+
+    z-index:900;
+
+
+}
+
+
+
+
+
+#backTop.active{
+
+
+    opacity:1;
+
+
+    visibility:visible;
+
+
+    transform:translateY(0);
+
+
+}
+
+
+
+
+
+
+
+#backTop:hover{
+
+
+    background:#a98443;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================================
+   HEADER LOGO EFFECT
+===================================================== */
+
+
+#header.scrolled .logo img{
+
+
+    max-height:50px;
+
+
+}
+
+
+
+
+
+
+
+
+/* =====================================================
+   IMAGE OPTIMIZATION
+===================================================== */
+
+
+img{
+
+
+    loading:lazy;
+
+
+}
+
+
+
+
+
+
+
+.hero img{
+
+
+    loading:eager;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================================
+   ACCESSIBILITY
+===================================================== */
+
+
+button:focus-visible,
+
+a:focus-visible{
+
+
+    outline:2px solid var(--gold);
+
+
+    outline-offset:4px;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================================
+   LARGE DESKTOP
+===================================================== */
+
+
+@media(min-width:1440px){
+
+
+
+    .container{
+
+
+        max-width:1300px;
+
+
+    }
+
+
+
+
+
+
+    .hero-content h1{
+
+
+        font-size:7rem;
+
+
+    }
+
+
+
+
+
+
+    .gallery figure{
+
+
+        height:420px;
+
+
+    }
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================================
+   REDUCE MOTION
+===================================================== */
+
+
+@media(prefers-reduced-motion:reduce){
+
+
+
+    *{
+
+
+        animation-duration:0.01ms!important;
+
+
+        animation-iteration-count:1!important;
+
+
+        transition-duration:0.01ms!important;
+
+
+        scroll-behavior:auto!important;
+
+
+    }
+
+
+}

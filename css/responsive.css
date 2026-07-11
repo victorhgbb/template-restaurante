@@ -1,0 +1,1394 @@
+
+/* =====================================================
+   AMÉLIA RESTAURANTE
+   RESPONSIVE DESIGN
+===================================================== */
+
+
+
+/* =====================================================
+   TABLETS
+   1024px
+===================================================== */
+
+
+@media(max-width:1024px){
+
+
+
+.container{
+
+    width:92%;
+
+}
+
+
+
+/* HEADER */
+
+
+nav ul{
+
+    gap:20px;
+
+}
+
+
+
+nav a{
+
+    font-size:.9rem;
+
+}
+
+
+
+
+
+
+/* HERO */
+
+
+.hero{
+
+    min-height:650px;
+
+}
+
+
+
+.hero-content h1{
+
+    font-size:5rem;
+
+}
+
+
+
+.hero-content p{
+
+    max-width:550px;
+
+}
+
+
+
+
+
+
+
+
+/* SOBRE */
+
+
+.grid-2{
+
+
+    gap:40px;
+
+
+}
+
+
+
+#sobre img{
+
+
+    height:500px;
+
+
+}
+
+
+
+#sobre h2{
+
+
+    font-size:3rem;
+
+
+}
+
+
+
+
+
+
+
+/* HISTÓRIA */
+
+
+#historia .cards{
+
+
+    gap:20px;
+
+
+}
+
+
+
+
+#historia h3{
+
+
+    font-size:2.2rem;
+
+
+}
+
+
+
+
+
+
+
+/* GALERIA */
+
+
+.gallery{
+
+
+    gap:20px;
+
+
+}
+
+
+
+.gallery figure{
+
+
+    height:300px;
+
+
+}
+
+
+
+
+
+
+
+
+/* DEPOIMENTOS */
+
+
+.testimonials{
+
+
+    gap:20px;
+
+
+}
+
+
+
+
+
+}
+
+
+/* =====================================================
+   MOBILE TABLET / SMARTPHONE
+   ATÉ 768px
+===================================================== */
+
+
+@media(max-width:768px){
+
+
+
+/* =====================================================
+   GLOBAL
+===================================================== */
+
+
+.container{
+
+    width:90%;
+
+}
+
+
+
+section{
+
+    padding:70px 0;
+
+}
+
+
+
+.section-title{
+
+    margin-bottom:40px;
+
+}
+
+
+
+.section-title h2{
+
+    font-size:2.8rem;
+
+}
+
+
+
+.section-title p{
+
+    font-size:.95rem;
+
+}
+
+
+
+
+
+
+
+
+/* =====================================================
+   HEADER MOBILE
+===================================================== */
+
+
+#header .container{
+
+    height:75px;
+
+}
+
+
+
+.logo img{
+
+    max-height:42px;
+
+    max-width:130px;
+
+}
+
+
+
+
+#menu-mobile{
+
+    display:block;
+
+}
+
+
+
+
+
+nav{
+
+
+    position:absolute;
+
+
+    top:75px;
+
+
+    left:0;
+
+
+    width:100%;
+
+
+    background:white;
+
+
+    overflow:hidden;
+
+
+    max-height:0;
+
+
+    transition:max-height .4s ease;
+
+
+}
+
+
+
+
+
+nav.active{
+
+
+    max-height:400px;
+
+
+}
+
+
+
+
+
+
+
+nav ul{
+
+
+    flex-direction:column;
+
+
+    gap:0;
+
+
+    padding:25px 30px;
+
+
+}
+
+
+
+
+
+nav li{
+
+
+    border-bottom:1px solid rgba(0,0,0,.08);
+
+
+}
+
+
+
+nav li:last-child{
+
+
+    border:none;
+
+
+}
+
+
+
+nav a{
+
+
+    display:block;
+
+
+    padding:15px 0;
+
+
+    color:#222;
+
+
+}
+
+
+
+
+
+
+
+
+/* =====================================================
+   HERO MOBILE
+===================================================== */
+
+
+.hero{
+
+
+    min-height:100vh;
+
+
+}
+
+
+
+
+.hero-content{
+
+
+    padding:20px;
+
+
+}
+
+
+
+.hero-content .subtitle{
+
+
+    font-size:.7rem;
+
+
+    letter-spacing:3px;
+
+
+}
+
+
+
+
+.hero-content h1{
+
+
+    font-size:4rem;
+
+
+    margin:15px 0;
+
+
+}
+
+
+
+
+
+.hero-content p{
+
+
+    font-size:.95rem;
+
+
+    line-height:1.7;
+
+
+}
+
+
+
+
+
+.hero-buttons{
+
+
+    margin-top:25px;
+
+
+}
+
+
+
+
+
+
+/* =====================================================
+   SOBRE MOBILE
+===================================================== */
+
+
+.grid-2{
+
+
+    grid-template-columns:1fr;
+
+
+}
+
+
+
+#sobre img{
+
+
+    height:350px;
+
+
+}
+
+
+
+
+#sobre h2{
+
+
+    font-size:2.7rem;
+
+
+}
+
+
+
+#sobre p{
+
+
+    font-size:.95rem;
+
+
+}
+
+
+
+
+
+
+
+
+/* =====================================================
+   MISSÃO VISÃO VALORES
+===================================================== */
+
+
+#historia .cards{
+
+
+    grid-template-columns:1fr;
+
+
+}
+
+
+
+
+
+#historia .food-card{
+
+
+    padding:35px 25px;
+
+
+}
+
+
+
+#historia h3{
+
+
+    font-size:2rem;
+
+
+}
+
+
+
+
+
+
+
+
+/* =====================================================
+   GALERIA MOBILE
+===================================================== */
+
+
+.gallery{
+
+
+    grid-template-columns:repeat(2,1fr);
+
+
+    gap:15px;
+
+
+}
+
+
+
+
+
+.gallery figure{
+
+
+    height:220px;
+
+
+}
+
+
+
+
+
+
+
+
+/* =====================================================
+   DEPOIMENTOS
+===================================================== */
+
+
+.testimonials{
+
+
+    grid-template-columns:1fr;
+
+
+}
+
+
+
+
+
+.testimonial{
+
+
+    padding:35px 25px;
+
+
+}
+
+
+
+
+
+
+
+/* =====================================================
+   CTA MOBILE
+===================================================== */
+
+
+.cta{
+
+
+    padding:80px 20px;
+
+
+}
+
+
+
+.cta h2{
+
+
+    font-size:2.7rem;
+
+
+}
+
+
+
+.cta p{
+
+
+    font-size:.95rem;
+
+
+}
+
+
+
+
+
+
+
+
+/* =====================================================
+   FOOTER MOBILE
+===================================================== */
+
+
+footer{
+
+
+    padding:60px 0 25px;
+
+
+}
+
+
+
+
+footer .container{
+
+
+    grid-template-columns:1fr;
+
+
+    gap:35px;
+
+
+}
+
+
+
+
+.footer-brand{
+
+
+    display:flex;
+
+
+    flex-direction:column;
+
+
+    align-items:center;
+
+
+}
+
+
+
+.footer-brand p{
+
+
+    max-width:280px;
+
+
+}
+
+
+
+
+
+.footer-links,
+
+.social-links{
+
+
+    align-items:center;
+
+
+}
+
+
+
+
+
+.footer-bottom{
+
+
+    margin-top:35px;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================================
+   FLOAT BUTTONS
+===================================================== */
+
+
+.whatsapp{
+
+
+    width:55px;
+
+
+    height:55px;
+
+
+    right:20px;
+
+
+    bottom:20px;
+
+
+}
+
+
+
+
+#backTop{
+
+
+    width:40px;
+
+
+    height:40px;
+
+
+    right:25px;
+
+
+    bottom:90px;
+
+
+}
+
+
+
+
+
+}
+
+
+/* =====================================================
+   SMARTPHONES
+   ATÉ 480px
+===================================================== */
+
+
+@media(max-width:480px){
+
+
+
+/* =====================================================
+   GLOBAL
+===================================================== */
+
+
+html,
+body{
+
+    width:100%;
+
+    overflow-x:hidden;
+
+}
+
+
+
+.container{
+
+
+    width:88%;
+
+
+}
+
+
+
+section{
+
+
+    padding:60px 0;
+
+
+}
+
+
+
+
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+
+#header .container{
+
+
+    height:70px;
+
+
+}
+
+
+
+.logo img{
+
+
+    max-height:38px;
+
+
+    max-width:120px;
+
+
+}
+
+
+
+
+#menu-mobile{
+
+
+    font-size:1.7rem;
+
+
+}
+
+
+
+
+
+nav{
+
+
+    top:70px;
+
+
+}
+
+
+
+
+
+
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+
+.hero{
+
+
+    min-height:650px;
+
+
+}
+
+
+
+
+.hero-content h1{
+
+
+    font-size:3.2rem;
+
+
+}
+
+
+
+
+.hero-content .subtitle{
+
+
+    letter-spacing:2px;
+
+
+}
+
+
+
+.hero-content p{
+
+
+    font-size:.9rem;
+
+
+    max-width:300px;
+
+
+}
+
+
+
+.hero-buttons{
+
+
+    width:100%;
+
+
+}
+
+
+
+
+.btn-primary{
+
+
+    width:100%;
+
+
+    max-width:280px;
+
+
+}
+
+
+
+
+
+
+
+
+/* =====================================================
+   SOBRE
+===================================================== */
+
+
+#sobre img{
+
+
+    height:280px;
+
+
+}
+
+
+
+
+#sobre h2{
+
+
+    font-size:2.2rem;
+
+
+}
+
+
+
+
+
+#sobre p{
+
+
+    line-height:1.7;
+
+
+}
+
+
+
+
+
+
+
+
+/* =====================================================
+   MISSÃO VISÃO VALORES
+===================================================== */
+
+
+#historia .food-card{
+
+
+    padding:30px 20px;
+
+
+}
+
+
+
+
+#historia h3{
+
+
+    font-size:1.8rem;
+
+
+}
+
+
+
+
+#historia p{
+
+
+    font-size:.9rem;
+
+
+}
+
+
+
+
+
+
+
+
+/* =====================================================
+   GALERIA
+===================================================== */
+
+
+.gallery{
+
+
+    grid-template-columns:1fr;
+
+
+}
+
+
+
+
+.gallery figure{
+
+
+    height:300px;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================================
+   DEPOIMENTOS
+===================================================== */
+
+
+.testimonial{
+
+
+    padding:30px 20px;
+
+
+}
+
+
+
+.testimonial::before{
+
+
+    font-size:4rem;
+
+
+}
+
+
+
+.testimonial p{
+
+
+    font-size:.9rem;
+
+
+}
+
+
+
+
+
+
+
+
+/* =====================================================
+   CTA
+===================================================== */
+
+
+.cta{
+
+
+    padding:70px 20px;
+
+
+}
+
+
+
+
+.cta h2{
+
+
+    font-size:2.2rem;
+
+
+}
+
+
+
+.cta p{
+
+
+    font-size:.9rem;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+
+.logo-footer img{
+
+
+    max-height:55px;
+
+
+}
+
+
+
+
+
+.footer-bottom{
+
+
+    font-size:.8rem;
+
+
+}
+
+
+
+
+
+
+
+
+/* =====================================================
+   FLOAT BUTTONS
+===================================================== */
+
+
+.whatsapp{
+
+
+    width:52px;
+
+
+    height:52px;
+
+
+    right:18px;
+
+
+    bottom:18px;
+
+
+}
+
+
+
+
+
+#backTop{
+
+
+    right:20px;
+
+
+    bottom:85px;
+
+
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================================
+   SMARTPHONES MUITO PEQUENOS
+   ATÉ 360px
+===================================================== */
+
+
+@media(max-width:360px){
+
+
+
+.container{
+
+
+    width:86%;
+
+
+}
+
+
+
+
+
+
+.hero-content h1{
+
+
+    font-size:2.8rem;
+
+
+}
+
+
+
+.hero-content p{
+
+
+    font-size:.85rem;
+
+
+}
+
+
+
+
+
+.section-title h2{
+
+
+    font-size:2.2rem;
+
+
+}
+
+
+
+
+#sobre h2{
+
+
+    font-size:2rem;
+
+
+}
+
+
+
+
+
+.gallery figure{
+
+
+    height:240px;
+
+
+}
+
+
+
+
+
+.cta h2{
+
+
+    font-size:2rem;
+
+
+}
+
+
+
+
+.btn-primary{
+
+
+    padding:13px 20px;
+
+
+    font-size:.8rem;
+
+
+}
+
+
+
+
+.whatsapp{
+
+
+    width:48px;
+
+
+    height:48px;
+
+
+}
+
+
+
+
+}
